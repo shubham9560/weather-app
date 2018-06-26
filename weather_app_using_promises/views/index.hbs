@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+</head>
+<body>
+<form method="post" action="/">
+    <input type="text" name="address">
+    <input type="submit" value="Submit">
+</form>
+<div>
+    {{# if err }}
+        <p>{{err}}</p>
+    {{/if}}
+    {{# if weather }}
+        <p>{{weather}}</p>
+    {{/if}}
+</div>
+</body>
+</html>
